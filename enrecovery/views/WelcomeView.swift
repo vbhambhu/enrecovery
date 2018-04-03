@@ -4,14 +4,11 @@
 //
 
 import UIKit
-import AVFoundation
-
 
 class WelcomeView: UIView {
 
     var loginAction: (() -> Void)?
     var registerAction: (() -> Void)?
-
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,7 +18,7 @@ class WelcomeView: UIView {
     func setup() {
         backgroundColor = .white
 
-
+        notMemberLabel.backgroundColor = .green
 
         let stackView = createStackView(views: [logoImage,
                                                 getStartedButton,
@@ -35,9 +32,11 @@ class WelcomeView: UIView {
     }
 
 
-    let logoImage: UITextField = {
-        let tf = UITextField(placeHolder: "logo")
-        return tf
+    let logoImage: UIImageView = {
+        let iv = UIImageView()
+        iv.image = UIImage(named: "bus.png")
+        iv.contentMode = .scaleAspectFill
+        return iv
     }()
 
 

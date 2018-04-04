@@ -41,8 +41,25 @@ class LoginController: UIViewController {
 
     func loginButtonPressed() {
         print("login clicked")
-    //        let loginVC = LoginController()
-    //        present(loginVC, animated: true, completion: nil)
+
+
+        guard let email = loginView.emailTextField.text else { return }
+        guard let password = loginView.passwordTextField.text else { return }
+        let urlString = URL(string: "http://localhost:8080/api/user/login")
+        if let url = urlString {
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if error != nil {
+                    print(error ?? "sss")
+                } else {
+                    if let usableData = data {
+                        print(usableData) //JSONSerialization
+                    }
+                }
+            }
+            task.resume()
+        }
+
+        
     }
 
     func cancelButtonPressed() {

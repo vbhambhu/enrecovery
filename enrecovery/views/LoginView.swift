@@ -34,7 +34,7 @@ class LoginView: UIView {
 
 
 
-        stackView.setAnchor(width: self.frame.width - 60, height: 205)
+        stackView.setAnchor(width: self.frame.width - 60, height: 210)
         stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     }

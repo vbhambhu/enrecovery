@@ -17,36 +17,47 @@ class WelcomeView: UIView {
 
     func setup() {
         backgroundColor = .white
-
-        logoImage.backgroundColor = .green
         addSubview(logoImage)
+        logoImage.setCenterAndTopPaddingFrom(width: 195, height: 33, topPadding: 100)
+
+        let stackView = createStackView(views: [loginButton,
+                                                notMemberLabel,
+                                                registerButton
+        ])
+        addSubview(stackView)
 
 
 
+        stackView.setAnchor(width: self.frame.width - 60, height: 150)
+       // stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50).isActive = true
 
-
-
-//        let stackView = createStackView(views: [logoImage,
-//                                                getStartedButton,
-//                                                notMemberLabel,
-//                                                registerButton
-//        ])
-//        addSubview(stackView)
-//        stackView.setAnchor(width: self.frame.width - 60, height: self.frame.height - 60)
-//        stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-//        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     }
 
 
     let logoImage: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "bus.png")
-        iv.contentMode = .scaleAspectFill
-
-        //style
-        iv.setAnchor(width: 100, height: 200)
-
+        iv.image = UIImage(named: "logo.png")
         return iv
+    }()
+
+
+    let loginButton: UIButton = {
+        let button = UIButton(title: "Get Started", borderColor: .greenBorderColor)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        return button
+    }()
+
+    let registerButton: UIButton = {
+        let button = UIButton(title: "Click here to register", borderColor: .redBorderColor)
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
+        return button
+    }()
+
+    let notMemberLabel: UILabel = {
+        let tl = UILabel(text: "Don't have details?")
+        return tl
     }()
 
 

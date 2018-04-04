@@ -9,6 +9,14 @@
 import UIKit
 
 extension UIView {
+
+    func setCenterAndTopPaddingFrom(width: CGFloat, height: CGFloat, topPadding: CGFloat){
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalToConstant: width).isActive = true
+        self.heightAnchor.constraint(equalToConstant: height).isActive = true
+        self.centerXAnchor.constraint(equalTo: (self.superview?.centerXAnchor)!).isActive = true
+        self.topAnchor.constraint(equalTo: (self.superview?.topAnchor)!, constant: topPadding).isActive = true
+    }
     
     func setAnchor(width: CGFloat, height: CGFloat) {
         self.setAnchor(top: nil,

@@ -18,22 +18,11 @@ class WelcomeView: UIView {
     func setup() {
         backgroundColor = .white
 
-
         logoImage.backgroundColor = .green
-
         addSubview(logoImage)
 
 
-        logoImage.setAnchor(top: self.topAnchor,
-                left: nil,
-                bottom: nil,
-                right: nil,
-                paddingTop: 100,
-                paddingLeft: 0,
-                paddingBottom: 0,
-                paddingRight: 0,
-                width: 200,
-                height: 100)
+
 
 
 
@@ -53,6 +42,10 @@ class WelcomeView: UIView {
         let iv = UIImageView()
         iv.image = UIImage(named: "bus.png")
         iv.contentMode = .scaleAspectFill
+
+        //style
+        iv.setAnchor(width: 100, height: 200)
+
         return iv
     }()
 
@@ -69,6 +62,6 @@ class WelcomeView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
 
 }

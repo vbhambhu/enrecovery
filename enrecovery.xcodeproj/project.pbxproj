@@ -9,28 +9,41 @@
 /* Begin PBXBuildFile section */
 		CF768178A32F15919D489F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768F0C1DF898EBF7EF2EEF /* AppDelegate.swift */; };
 		CF76824EA866A7DFF0AF6F1C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7681783165D7D79B4ECB7E /* UIButtonExtension.swift */; };
+		CF7682DDDE0BA17A557A05DC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = CF7684BE4144407FB9BC7EAC /* back.png */; };
 		CF7684613CB1D9B5B0A2C2BB /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768D77B55CCA10FA9C0AC5 /* UITextFieldExtension.swift */; };
+		CF768550CF449B30B5542A1B /* LoginOperationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768AEE8A145281436300DA /* LoginOperationController.swift */; };
 		CF7685E7A92005B5B557EF94 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768DE20ACF6E56AA603F85 /* LoginView.swift */; };
 		CF7686EA760AD389F2DAC53B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768E6A30D5BB8A079D6ADD /* UIColorExtension.swift */; };
+		CF76893F5A5DCA7686BF5096 /* LoginOperationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7680D820E107C79593E993 /* LoginOperationView.swift */; };
 		CF768A5D7C296C5039E7D22D /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768395B926DBFB94076022 /* WelcomeController.swift */; };
 		CF768A9A17D4110ADF6CF05A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76849E6BDFB3C7D7B06C5E /* WelcomeView.swift */; };
+		CF768B290E0C1DF649C4E71F /* LoginNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76831DB5F93465FCDBA04B /* LoginNameController.swift */; };
+		CF768B3B4D1221BAEB8EFE22 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = CF76819F3446E86AAF7E5D47 /* close.png */; };
 		CF768B7653D2956D296230FF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768FA47905C97E1956ED91 /* LoginController.swift */; };
+		CF768D818CA5619BBC82C08A /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = CF76822E1ED2A4767019D601 /* back1.png */; };
 		CF768E7E0C38B2E7C914B410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF768512E3B79EFBF840C6AB /* Assets.xcassets */; };
 		CF768F0A02F7A83F4CDBE8CB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF768414E18F9BDE1C742C24 /* logo.png */; };
 		CF768F22DA90C3540B0B6F77 /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768DF1FE349D3AEB54E614 /* StackViewExtension.swift */; };
+		CF768F5BBB3026D0143D57B0 /* LoginNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768FF544EBA9943CA0EC9D /* LoginNameView.swift */; };
 		CF768F8D163134C613C15F9C /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768022BF185E3E31AEC976 /* UILabelExtension.swift */; };
 		CF768FF5B69BDD9A788A3B37 /* LayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF768F92FC4489DE1CB7B441 /* LayoutExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF768022BF185E3E31AEC976 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		CF7680D820E107C79593E993 /* LoginOperationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOperationView.swift; sourceTree = "<group>"; };
 		CF76811E5D0A5828925ACB28 /* enrecovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enrecovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7681783165D7D79B4ECB7E /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		CF76819F3446E86AAF7E5D47 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		CF76821800115B30A4E9ECC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		CF76822E1ED2A4767019D601 /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back1.png; sourceTree = "<group>"; };
+		CF76831DB5F93465FCDBA04B /* LoginNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNameController.swift; sourceTree = "<group>"; };
 		CF768395B926DBFB94076022 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		CF768414E18F9BDE1C742C24 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		CF76849E6BDFB3C7D7B06C5E /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		CF7684BE4144407FB9BC7EAC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		CF768512E3B79EFBF840C6AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF768AEE8A145281436300DA /* LoginOperationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOperationController.swift; sourceTree = "<group>"; };
 		CF768D77B55CCA10FA9C0AC5 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		CF768DE20ACF6E56AA603F85 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CF768DF1FE349D3AEB54E614 /* StackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
@@ -38,6 +51,7 @@
 		CF768F0C1DF898EBF7EF2EEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF768F92FC4489DE1CB7B441 /* LayoutExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutExtension.swift; sourceTree = "<group>"; };
 		CF768FA47905C97E1956ED91 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CF768FF544EBA9943CA0EC9D /* LoginNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,8 @@
 			children = (
 				CF76849E6BDFB3C7D7B06C5E /* WelcomeView.swift */,
 				CF768DE20ACF6E56AA603F85 /* LoginView.swift */,
+				CF768FF544EBA9943CA0EC9D /* LoginNameView.swift */,
+				CF7680D820E107C79593E993 /* LoginOperationView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -86,6 +102,8 @@
 			children = (
 				CF768395B926DBFB94076022 /* WelcomeController.swift */,
 				CF768FA47905C97E1956ED91 /* LoginController.swift */,
+				CF76831DB5F93465FCDBA04B /* LoginNameController.swift */,
+				CF768AEE8A145281436300DA /* LoginOperationController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -100,6 +118,9 @@
 				CF76858A2A2C754129347E85 /* views */,
 				CF76811BE9507115A00B2739 /* extensions */,
 				CF768414E18F9BDE1C742C24 /* logo.png */,
+				CF76819F3446E86AAF7E5D47 /* close.png */,
+				CF7684BE4144407FB9BC7EAC /* back.png */,
+				CF76822E1ED2A4767019D601 /* back1.png */,
 			);
 			path = enrecovery;
 			sourceTree = "<group>";
@@ -164,6 +185,9 @@
 			files = (
 				CF768E7E0C38B2E7C914B410 /* Assets.xcassets in Resources */,
 				CF768F0A02F7A83F4CDBE8CB /* logo.png in Resources */,
+				CF768B3B4D1221BAEB8EFE22 /* close.png in Resources */,
+				CF7682DDDE0BA17A557A05DC /* back.png in Resources */,
+				CF768D818CA5619BBC82C08A /* back1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +209,10 @@
 				CF7684613CB1D9B5B0A2C2BB /* UITextFieldExtension.swift in Sources */,
 				CF768B7653D2956D296230FF /* LoginController.swift in Sources */,
 				CF7685E7A92005B5B557EF94 /* LoginView.swift in Sources */,
+				CF768B290E0C1DF649C4E71F /* LoginNameController.swift in Sources */,
+				CF768F5BBB3026D0143D57B0 /* LoginNameView.swift in Sources */,
+				CF768550CF449B30B5542A1B /* LoginOperationController.swift in Sources */,
+				CF76893F5A5DCA7686BF5096 /* LoginOperationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

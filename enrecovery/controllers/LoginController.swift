@@ -39,6 +39,18 @@ class LoginController: UIViewController {
     }
 
 
+//    func textFieldShouldReturn(textField: UITextField) -> Bool {
+//        //textField code
+//        textField.resignFirstResponder()  //if desired
+//        performAction()
+//        return true
+//    }
+
+    func performAction() {
+        //action events
+    }
+
+
     func loginButtonPressed() {
         print("login clicked")
 
@@ -58,8 +70,6 @@ class LoginController: UIViewController {
             }
             task.resume()
         }
-
-        
     }
 
     func cancelButtonPressed() {
@@ -68,3 +78,30 @@ class LoginController: UIViewController {
     }
 
 }
+
+
+
+extension LoginView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == passwordTextField {
+            passwordTextField.resignFirstResponder()
+            doWhatYouWantTo()
+        } else {
+            passwordTextField.becomeFirstResponder()
+        }
+        return false
+    }
+
+    
+    func doWhatYouWantTo() {
+
+        errorTextField.text = "Invalid username or password!"
+        print("button presses.")
+        print(passwordTextField.text)
+    }
+}
+
+
+
+
+

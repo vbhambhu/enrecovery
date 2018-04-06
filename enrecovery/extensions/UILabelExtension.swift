@@ -14,6 +14,7 @@ extension UILabel {
         self.textAlignment = .center
         self.text = text
         self.textColor = .black
+        self.setAnchor(width: 0, height: 40)
     }
     
     

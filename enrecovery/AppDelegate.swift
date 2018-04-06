@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  enrecovery
-//
-//  Created by Vinod Kumar on 03/04/2018.
-//  Copyright © 2018 Vinod Kumar. All rights reserved.
-//
 
 import UIKit
 
@@ -15,11 +8,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: WelcomeController())
+        window?.rootViewController = UINavigationController(rootViewController: LoginOperationController())
         window?.makeKeyAndVisible()
         return true
     }
